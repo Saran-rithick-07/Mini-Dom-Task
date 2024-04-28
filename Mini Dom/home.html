@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <input type="text" id="textBox">
+            <button onclick="get()">Summit</button>
+            <h1 id="head"></h1>
+
+            <div>
+                <button onclick="myFunction()" id="myDiv">change color</button>
+               
+            </div>
+
+            <div>
+                <button onclick="get2('HELLO')" id="hello" >Add HELLO</button>
+                <h1 id="hell"></h1>
+                <h1 id="hel"></h1>
+                <h1 id="he"></h1>
+            </div>
+            
+            <div class="hari"> 
+                <div class="names">
+                    <button onclick="display('John')" id="John">John</button>
+                    <button onclick="display('Hari')" id="hari">Hari</button>
+                    <button onclick="display('Praveen')" id="praveen">Praveen</button>
+                </div>
+                <h1 id="para"></h1>
+            </div> 
+        </div>
+    </div>
+
+
+    <script>
+        function get(){
+    
+    var input = document.getElementById('textBox').value;
+
+    var result = input; 
+    head.innerHTML = result;
+
+    
+}
+var a = 'no';
+function myFunction(){
+        
+        if(a=='no'){
+            document.getElementById("myDiv").style.backgroundColor = "red";
+            a='yes'
+        }
+        else{
+            document.getElementById("myDiv").style.backgroundColor = "";
+            a='no'
+        }
+        
+}
+
+function display(a){
+    document.getElementById("para").innerHTML=a;
+}
+
+function get2(b){
+    
+    document.getElementById("hell").innerHTML=b;
+    document.getElementById("hel").innerHTML=b;
+    document.getElementById("he").innerHTML=b;
+
+}
+
+
+
+    </script>
+</body>
+</html>

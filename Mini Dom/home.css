@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: wheat;
+}
+.flex-container{
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+#myDiv{
+    width: 235px;
+    margin-bottom: 20px;
+}
+#hello{
+    width: 235px;
+    margin-bottom: 20px;
+}
+.hari{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 235px;
+    margin-bottom: 20px;
+}
+#para{
+    margin: 0%;
+}
+#hello{
+    margin: 0%;
+}
